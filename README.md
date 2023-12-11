@@ -46,7 +46,7 @@ Navigate back to the root and do
 cd jovian-careers-website
 ```
 
-The base for the code is from this repo, that codes a basic website that displays job offers that are stored in a dictionnary variable in the main script. The work I did was to build a MySQL server that would contain this data.
+The base for the code is from [this repo](https://github.com/aakashns/jovian-careers-website/tree/main), that codes a basic website that displays job offers that are stored in a dictionnary variable in the main script. The work I did was to build a MySQL server that would contain this data.
 
 If not already done, stop the previous command because I am using the same port with this script.
 
