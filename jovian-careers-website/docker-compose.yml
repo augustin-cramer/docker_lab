@@ -1,0 +1,50 @@
+version: '3'
+
+networks:
+  web_network1:
+    driver: bridge
+  web_network2:
+    driver: bridge
+
+services:
+  web1:
+    build: .
+    ports:
+      - "5001:5001"
+    networks:
+      - web_network1
+    depends_on:
+      mysql:
+        condition: service_started
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DB: jovian_careers_1
+      DATA_FILE_NAME: jobs_1.json
+      WAIT_TIME: 1
+
+  web2:
+    build: .
+    ports:
+      - "5002:5001"
+    networks:
+      - web_network2
+    depends_on:
+      mysql:
+        condition: service_started
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DB: jovian_careers_2
+      DATA_FILE_NAME: jobs_2.json
+      WAIT_TIME: 2
+
+  mysql:
+    image: mysql:latest
+    networks:
+      - web_network1
+      - web_network2
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"

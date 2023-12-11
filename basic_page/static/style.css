@@ -1,0 +1,16 @@
+/* static/style.css */
+body {
+    font-family: 'Your Fancy Font', sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
