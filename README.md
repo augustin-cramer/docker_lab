@@ -103,4 +103,4 @@ services:
 
 We are creating two containers containing copies of the same webapp but they are provided different configurations using the environnment variables.
 They also belong to different networks so these containers cannot communicate between each other but can communicate with the Mysql Database Container.
-Each instance of the website has its own data, you can verify is using the api endpoint /api/jobs.
+Each instance of the website has its own data, you can verify is using the api endpoint /api/jobs (for instance: http://localhost:5001/api/jobs).
