@@ -59,7 +59,7 @@ docker-compose up --build
 
 ```docker-compose.yml
 # docker-compose.yml
-...
+services:
   mysql:
     image: mysql:latest
     ...
