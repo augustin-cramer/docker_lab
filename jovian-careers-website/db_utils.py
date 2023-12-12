@@ -1,9 +1,7 @@
 import mysql.connector
 import json
 import time
-import logging
 
-logging.basicConfig(level=logging.INFO)
 
 # doesn't work currently
 def wait_for_mysql(mysql):
