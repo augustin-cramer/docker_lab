@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify
 from db_utils import initialize_database, get_mysql_connection
-from config import MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB, DATA_FILE_NAME, WAIT_TIME
+from default_config import MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB, DATA_FILE_NAME, WAIT_TIME
 import os
 import time
 
