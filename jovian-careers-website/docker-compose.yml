@@ -20,7 +20,7 @@ services:
       MYSQL_HOST: mysql
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DB: jovian_careers_1
-      DATA_FILE_NAME: jobs_1.json
+      DATA_FILE_NAME: data/jobs_1.json
       WAIT_TIME: 1
 
   web2:
@@ -36,7 +36,7 @@ services:
       MYSQL_HOST: mysql
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DB: jovian_careers_2
-      DATA_FILE_NAME: jobs_2.json
+      DATA_FILE_NAME: data/jobs_2.json
       WAIT_TIME: 2
 
   mysql:
