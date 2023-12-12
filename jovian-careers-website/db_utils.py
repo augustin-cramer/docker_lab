@@ -1,6 +1,5 @@
 import mysql.connector
 import json
-import time
 
 
 # Function to initialize the database
@@ -12,7 +11,7 @@ def initialize_database(app):
             user=app.config["MYSQL_USER"],
             password=app.config["MYSQL_PASSWORD"],
         )
-        # wait_for_mysql(conn)
+        
         # Create a cursor to execute SQL commands
         cursor = conn.cursor()
 
@@ -20,7 +19,6 @@ def initialize_database(app):
         cursor.execute(
             f"CREATE DATABASE IF NOT EXISTS {app.config['MYSQL_DB']};"
         )
-        logging.info(f"Created database {app.config['MYSQL_DB']}")
 
         # Switch to the database
         cursor.execute(f"USE {app.config['MYSQL_DB']};")
