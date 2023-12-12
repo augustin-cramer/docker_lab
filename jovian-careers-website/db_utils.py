@@ -3,18 +3,6 @@ import json
 import time
 
 
-# doesn't work currently
-def wait_for_mysql(mysql):
-    while True:
-        try:
-            mysql.ping(reconnect=True, attempts=5, delay=1)
-            print("Connected to MySQL")
-            break
-        except mysql.connector.Error as e:
-            print(f"Failed to connect to MySQL: {e}")
-            time.sleep(1)
-
-
 # Function to initialize the database
 def initialize_database(app):
     try:
