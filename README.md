@@ -1,8 +1,10 @@
 # Data Stream Processing
 ## Lab 3 - Docker
 
+This repo is divided in two directories, one with a basic web page for questions 1 to 4 and another one more complex for questions 5 and 6.
+
 Careful Note :
-I am working on MacOs so the commands could change, please adapt.
+I am working with MacOs so the commands could change if you're using another OS, please adapt.
 
 ### basic_page: questions 1 to 4
 
